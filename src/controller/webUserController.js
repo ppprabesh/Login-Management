@@ -238,5 +238,3 @@ export const resetPasswordController = expressAsyncHandler(
     });
   }
 );
-
-console.log("hi");
