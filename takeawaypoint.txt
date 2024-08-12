@@ -1,0 +1,73 @@
+always place dynamic routes at last
+
+Alt + Shift + O
+=> removes unused imports
+=> arranges all the packages imports and then files imports. 
+
+  /*  my profile controller
+    send token from postman
+    get token from postman
+    verify token
+        if not verify throw error
+        else
+           get id from token
+           get profile details from User id
+           send profile info to postman 
+    */
+
+  isAuthenticated
+               it is used to check whether the token is valid or not.
+
+  make varaible in postman => enviroment => global => usually for tokens and url  => is called inside {{variable}}
+
+  send mail 
+  nodemailer
+
+  dotenv
+      define variable in dot env
+      get varaible of dot env(make a constant file and define all dotenv variavbles in there so we dont have to config in each file where we need dotenv variables)
+      what type of variable are stored in dotenv
+      make .env file outside src(in main directory)
+      it uses  UPPERCASE_CASE_CONVENTION
+      every data in dot env is considered as string so we dont need double quote.
+
+      we can define variable in dotenv file but to use it we have import config and use config() function. now to  use we call as process.env.NAME where NAME  is a variable/
+      EG: console.log(process.env.NAME)  // prabesh
+
+      Things to declare in dotenv(can be changed/controlled by the owner ratherthan the developer)
+      email
+      password
+      secretKey
+      url
+      DBURL(database url)
+
+      if you make any changes in .env file, you need to restart the progress 
+      
+
+
+      =>Multer
+      => status code
+
+
+      success=> 2xx
+      200=> success
+      create =201
+      read =200
+      update = 200
+      delete = 201
+
+
+
+
+   error= 4xx
+   400=> error
+   403=> token is valid but not unauthorized
+   401=> token not valid, credentials dont match
+   409=> conflict,duplicate
+   404=> not found
+
+
+   Authorization
+   Admin => read User
+   SuperAdmin => read and delete User
+   customer => cannot read user
